@@ -1,0 +1,85 @@
+create " full-stack " folder 
+
+
+ecommerce-app/
+├── backend/
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── itemController.js
+│   ├── middleware/
+│   │   ├── auth.js
+│   │   └── upload.js
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Item.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   └── items.js
+│   ├── uploads/
+│   ├── .env
+│   ├── package.json
+│   └── server.js
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Navbar.js
+│   │   │   └── ItemForm.js
+│   │   ├── pages/
+│   │   │   ├── Home.js
+│   │   │   ├── Login.js
+│   │   │   └── Signup.js
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── index.js
+│   ├── package.json
+│   └── .env
+└── README.md
+
+
+
+frontend .env -----
+
+
+VITE_API_URL=http://localhost:5000/api
+
+
+------------------
+
+
+
+
+
+
+backend .env -----
+
+
+MONGODB_URI=mongodb://localhost:27017/your-database-name
+JWT_SECRET=your-secret-key(04f290df31e9091f22f8e2dfb777a1a64cfc32fa504c12e6ee3f7666583b4f79)
+PORT=5000
+
+
+------------------
+
+
+mkdir backend
+cd backend
+npm init -y
+npm install express mongoose bcryptjs jsonwebtoken multer cors dotenv
+npm install -D nodemon
+
+
+
+
+npm create vite@latest frontend 
+cd frontend
+npm install
+npm install axios react-router-dom
+
+
+
+
+open frontend  on website  and hit enter 
+
