@@ -57,7 +57,7 @@ backend .env -----
 
 
 MONGODB_URI=mongodb://localhost:27017/your-database-name
-JWT_SECRET=your-secret-key(04f290df31e9091f22f8e2dfb777a1a64cfc32fa504c12e6ee3f7666583b4f79)
+JWT_SECRET=your-secret-key()
 PORT=5000
 
 
